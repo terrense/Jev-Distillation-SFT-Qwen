@@ -1,0 +1,8 @@
+{
+  "full_vectors": 153,
+  "exact_one_hot_vectors": 97,
+  "fraction_max_at_least_0_99": 0.7516339869281046,
+  "mean_entropy_nats": 0.10278138783266527,
+  "teacher_error_correlation": null,
+  "reason": "No independent human gold; candidate proposals are not accuracy labels."
+}

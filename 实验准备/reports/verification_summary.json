@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-19",
+  "tests_run": 35,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "offline software checks, not model or clinical performance",
+  "live_teacher_calls": 0,
+  "training_runs": 0
+}

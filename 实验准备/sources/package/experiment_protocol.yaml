@@ -1,0 +1,69 @@
+project: CARE-Distill
+status: preregistration_proposal_not_executed
+date: '2026-11-18'
+primary_labels: [GUIDANCE, PRECONSULT, SERVICE, OTHER]
+auxiliary_decisions: [ROUTE, CLARIFY, ESCALATE]
+independent_flags: [secondary_intents, ambiguity, medical_safety_trigger]
+data_plan:
+  authorized_real_dialogue_decisions_target: 24000
+  expert_gold_total_target: 6000
+  train_gold: 2000
+  dev: 600
+  iid_test: 1200
+  hard_test: 800
+  external_hospital_test: 800
+  temporal_test: 400
+  safety_challenge_test: 200
+  training_side_unlabeled_target: 18000
+  pseudo_labeled_target_after_qa: 12000
+  synthetic_training_target: 10000
+  splitting: session_patient_site_and_time_isolated
+teachers:
+  - version_locked_authorized_GPT_class
+  - optional_TypeSafe_Jev_typed_decision_api
+  - local_Qwen3_32B_or_Qwen3_30B_A3B
+teacher_note: Do not assume closed APIs expose normalized class probabilities or token logits.
+students:
+  - Chinese_MacBERT_encoder
+  - BGE_embeddings_plus_linear_head
+  - Qwen3_1_7B
+  - Qwen3_4B
+  - Qwen3_8B
+human_label_budgets: [100, 250, 500, 1000, 2000]
+acquisition_budgets_per_round: [250, 500, 1000, 2000]
+train_seeds: [11, 23, 42, 67, 101]
+main_primary_metrics: [iid_macro_f1, hard_macro_f1]
+secondary_metrics:
+  - external_hospital_macro_f1
+  - temporal_macro_f1
+  - per_class_f1
+  - clarify_precision_recall
+  - safety_escalation_sensitivity_and_over_escalation
+  - ece_and_brier
+  - selective_risk_at_80_90_95_percent_coverage
+  - end_to_end_workflow_activation_accuracy
+  - p50_p95_latency
+  - throughput_and_memory
+  - total_teacher_labeling_cost
+  - inference_cost_per_1000_requests
+ablations:
+  - gold_only_sft
+  - single_teacher_hard_labels
+  - multi_teacher_consensus
+  - plus_ambiguity_review
+  - plus_student_guided_acquisition
+  - plus_valid_class_soft_targets_if_available
+  - plus_calibrated_abstention
+  - remove_context
+  - remove_safety_head
+  - optional_true_on_policy_token_scoring_with_open_teacher
+statistical_protocol:
+  paired_cluster_bootstrap_replicates: 10000
+  familywise_adjustment: Holm
+  report_per_seed: true
+  report_negative_results: true
+data_governance:
+  prohibit_unauthorized_external_patient_data_transfer: true
+  heldout_tests_hidden_from_teachers: true
+  institutional_approval_required: true
+  expert_review_required_for_medical_safety: true

@@ -1,0 +1,19 @@
+{
+  "method": "one_sided_exact_95_percent_bound_when_zero_misses",
+  "zero_miss_upper_rates": {
+    "100": 0.029513049607039932,
+    "200": 0.014867039231272083,
+    "299": 0.009969146792899286,
+    "600": 0.004980443380361299
+  },
+  "positive_cases_required_with_zero_misses": {
+    "0.01": 299,
+    "0.005": 598
+  },
+  "planned_safety_slice": {
+    "positive": 100,
+    "negative": 100
+  },
+  "implication": "200 total with 100 positives cannot establish a miss rate below 1%, even with zero observed misses",
+  "not_a_clinical_safety_guarantee": true
+}

@@ -1,0 +1,150 @@
+{
+  "n": 32,
+  "provisional": true,
+  "accuracy": 0.78125,
+  "macro_f1": 0.7585858585858586,
+  "format_success_rate": 1.0,
+  "per_label": {
+    "triage": {
+      "support": 8,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8
+    },
+    "preconsult": {
+      "support": 8,
+      "precision": 1.0,
+      "recall": 0.375,
+      "f1": 0.5454545454545454
+    },
+    "info": {
+      "support": 8,
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "f1": 0.7999999999999999
+    },
+    "other": {
+      "support": 8,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.888888888888889
+    }
+  },
+  "confusion": {
+    "triage": {
+      "triage": 8,
+      "preconsult": 0,
+      "info": 0,
+      "other": 0,
+      "ERROR": 0
+    },
+    "preconsult": {
+      "triage": 4,
+      "preconsult": 3,
+      "info": 1,
+      "other": 0,
+      "ERROR": 0
+    },
+    "info": {
+      "triage": 0,
+      "preconsult": 0,
+      "info": 6,
+      "other": 2,
+      "ERROR": 0
+    },
+    "other": {
+      "triage": 0,
+      "preconsult": 0,
+      "info": 0,
+      "other": 8,
+      "ERROR": 0
+    }
+  },
+  "false_rejection_rate": 0.08333333333333333,
+  "out_of_scope_acceptance_rate": 0.0,
+  "latency_p50_ms": 6380.37,
+  "latency_p95_ms": 10114.39,
+  "coverage": {
+    "single_turn": {
+      "correct": 13,
+      "n": 16,
+      "accuracy": 0.8125
+    },
+    "context": {
+      "correct": 12,
+      "n": 16,
+      "accuracy": 0.75
+    },
+    "boundary": {
+      "correct": 12,
+      "n": 16,
+      "accuracy": 0.75
+    }
+  },
+  "failures": [
+    {
+      "id": "seed-preconsult-002",
+      "expected": "preconsult",
+      "actual": "triage",
+      "user_input": "医生还没见到，先帮我把病史记一下",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "triage"
+    },
+    {
+      "id": "seed-preconsult-003",
+      "expected": "preconsult",
+      "actual": "triage",
+      "user_input": "我挂了心内科，最近胸闷，想先把情况说明白",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "triage"
+    },
+    {
+      "id": "context-001",
+      "expected": "preconsult",
+      "actual": "triage",
+      "user_input": "头晕",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "triage"
+    },
+    {
+      "id": "context-005",
+      "expected": "preconsult",
+      "actual": "triage",
+      "user_input": "三天了",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "triage"
+    },
+    {
+      "id": "context-009",
+      "expected": "preconsult",
+      "actual": "info",
+      "user_input": "没有过敏，前年做过手术",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "registration"
+    },
+    {
+      "id": "seed-info-002",
+      "expected": "info",
+      "actual": "other",
+      "user_input": "第一次来怎么挂号",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "idle"
+    },
+    {
+      "id": "context-014",
+      "expected": "info",
+      "actual": "other",
+      "user_input": "先告诉我停车费怎么交，挂哪科等下问",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": "idle"
+    }
+  ],
+  "warning": "Assistant-authored smoke labels are not an independent human benchmark."
+}

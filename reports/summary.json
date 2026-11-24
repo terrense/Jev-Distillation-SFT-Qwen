@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-18",
+  "scope": "data_distillation_and_task_planning_only",
+  "jev_model": "jev-1.14.0",
+  "jev_successful_dataset_annotations": 155,
+  "connectivity_probe_successes": 1,
+  "credits_used": 156,
+  "last_min_reported_balance": 11844,
+  "handoff": {
+    "policy_version": "hospital-intent-v0.2-draft",
+    "unique_candidates": 156,
+    "by_proposed_label": {
+      "triage": 42,
+      "preconsult": 42,
+      "info": 42,
+      "other": 30
+    },
+    "jev_annotated_under_current_or_historical_policy": 153,
+    "human_approved": 0,
+    "review_pending": 156,
+    "raw_generated_quarantined": 60,
+    "note": "Historical teacher labels require policy review; proposed labels are hidden in reviewer packets.",
+    "files_sha256": {
+      "candidates_with_teachers.jsonl": "44bad3eb599e2aa7f88f1812676abc0596eb63d9ca717cd3ca5e4c15034d5d9c",
+      "packet_id_mapping.jsonl": "5bfa3be5df54bdeb6b765bf493561e72e0d300812577a71ab2a4c62eaea7173a",
+      "priority_review.jsonl": "44bad3eb599e2aa7f88f1812676abc0596eb63d9ca717cd3ca5e4c15034d5d9c",
+      "reviewer_nayang.jsonl": "b2a292132bb8ac3a863ce7f1da19b81330fd5313a4e7d24646973fe6c55c41f5",
+      "reviewer_you.jsonl": "9f83821ed87bd1c86419fbb0de8521b343b8b3fedf0d8108867db6889fc3fbb7"
+    }
+  },
+  "comparison": {
+    "原入口": {
+      "n": 32,
+      "accuracy": 0.78125,
+      "macro_f1": 0.7585858585858586,
+      "latency_p50_ms": 6380.37,
+      "latency_p95_ms": 10114.39
+    },
+    "精简四分类": {
+      "n": 32,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "latency_p50_ms": 85.14,
+      "latency_p95_ms": 3145.05
+    },
+    "Jev": {
+      "n": 32,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "latency_p50_ms": 3442.79,
+      "latency_p95_ms": 3787.1
+    }
+  },
+  "sft_executed": false,
+  "production_modified": false,
+  "human_approved": 0
+}

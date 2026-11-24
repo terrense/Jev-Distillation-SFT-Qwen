@@ -1,0 +1,12 @@
+{
+  "python_packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.1",
+    "scikit-learn": "1.7.1",
+    "jsonschema": "4.26.0",
+    "PyYAML": "6.0.2",
+    "requests": "2.32.5",
+    "beautifulsoup4": "4.14.3"
+  },
+  "gpu_or_training_environment_checked": false
+}

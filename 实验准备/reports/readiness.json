@@ -1,0 +1,29 @@
+{
+  "status": "OFFLINE_PREPARATION_READY_RESEARCH_NOT_READY_TO_RUN",
+  "candidates": 156,
+  "human_approved": 0,
+  "partition_counts": {
+    "unassigned": 156
+  },
+  "checks": {
+    "candidate_schema_passed": true,
+    "human_gold_available": false,
+    "gold_target_6000_reached": false,
+    "actual_external_site_selected": false,
+    "temporal_cutoff_selected": false,
+    "clinical_safety_policy_approved": false,
+    "training_model_preparation_owned_by_user": true
+  },
+  "blocking_research_prerequisites": [
+    "human_gold_available",
+    "gold_target_6000_reached",
+    "actual_external_site_selected",
+    "temporal_cutoff_selected",
+    "clinical_safety_policy_approved"
+  ],
+  "teacher_class_vectors_structure_verified": 153,
+  "eligible_calibrated_soft_targets": 0,
+  "live_api_calls_this_build": 0,
+  "training_runs_started": 0,
+  "source_handoff_sha256": "44bad3eb599e2aa7f88f1812676abc0596eb63d9ca717cd3ca5e4c15034d5d9c"
+}

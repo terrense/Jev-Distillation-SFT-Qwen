@@ -1,0 +1,3 @@
+{"id": "clarify-001", "user_input": "三天了", "history": [], "context": {}, "intent": null, "expected_action": "clarify"}
+{"id": "clarify-002", "user_input": "嗯", "history": [], "context": {}, "intent": null, "expected_action": "clarify"}
+{"id": "clarify-003", "user_input": "那个", "history": [], "context": {}, "intent": null, "expected_action": "clarify"}

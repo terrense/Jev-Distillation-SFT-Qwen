@@ -1,0 +1,91 @@
+{
+  "n": 36,
+  "provisional": true,
+  "accuracy": 1.0,
+  "macro_f1": 0.75,
+  "format_success_rate": 1.0,
+  "per_label": {
+    "triage": {
+      "support": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "preconsult": {
+      "support": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "info": {
+      "support": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "other": {
+      "support": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1": 0
+    }
+  },
+  "confusion": {
+    "triage": {
+      "triage": 12,
+      "preconsult": 0,
+      "info": 0,
+      "other": 0,
+      "ERROR": 0
+    },
+    "preconsult": {
+      "triage": 0,
+      "preconsult": 12,
+      "info": 0,
+      "other": 0,
+      "ERROR": 0
+    },
+    "info": {
+      "triage": 0,
+      "preconsult": 0,
+      "info": 12,
+      "other": 0,
+      "ERROR": 0
+    },
+    "other": {
+      "triage": 0,
+      "preconsult": 0,
+      "info": 0,
+      "other": 0,
+      "ERROR": 0
+    }
+  },
+  "false_rejection_rate": 0.0,
+  "out_of_scope_acceptance_rate": null,
+  "latency_p50_ms": 3439.01,
+  "latency_p95_ms": 4701.47,
+  "coverage": {
+    "context": {
+      "correct": 36,
+      "n": 36,
+      "accuracy": 1.0
+    },
+    "boundary": {
+      "correct": 36,
+      "n": 36,
+      "accuracy": 1.0
+    },
+    "minimal_pair": {
+      "correct": 36,
+      "n": 36,
+      "accuracy": 1.0
+    },
+    "needs_human": {
+      "correct": 36,
+      "n": 36,
+      "accuracy": 1.0
+    }
+  },
+  "failures": [],
+  "warning": "Assistant-authored smoke labels are not an independent human benchmark."
+}

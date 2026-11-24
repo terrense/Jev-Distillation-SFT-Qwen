@@ -1,0 +1,22 @@
+{
+  "policy_version": "hospital-intent-v0.2-draft",
+  "unique_candidates": 156,
+  "by_proposed_label": {
+    "triage": 42,
+    "preconsult": 42,
+    "info": 42,
+    "other": 30
+  },
+  "jev_annotated_under_current_or_historical_policy": 153,
+  "human_approved": 0,
+  "review_pending": 156,
+  "raw_generated_quarantined": 60,
+  "note": "Historical teacher labels require policy review; proposed labels are hidden in reviewer packets.",
+  "files_sha256": {
+    "candidates_with_teachers.jsonl": "44bad3eb599e2aa7f88f1812676abc0596eb63d9ca717cd3ca5e4c15034d5d9c",
+    "packet_id_mapping.jsonl": "5bfa3be5df54bdeb6b765bf493561e72e0d300812577a71ab2a4c62eaea7173a",
+    "priority_review.jsonl": "44bad3eb599e2aa7f88f1812676abc0596eb63d9ca717cd3ca5e4c15034d5d9c",
+    "reviewer_nayang.jsonl": "b2a292132bb8ac3a863ce7f1da19b81330fd5313a4e7d24646973fe6c55c41f5",
+    "reviewer_you.jsonl": "9f83821ed87bd1c86419fbb0de8521b343b8b3fedf0d8108867db6889fc3fbb7"
+  }
+}

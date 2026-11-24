@@ -1,0 +1,120 @@
+project: CARE-Distill
+protocol_version: care-prep-v1
+status: preparation_only_not_preregistered_not_executed
+date: '2026-11-19'
+execution_scope:
+  allowed_now: [source_review, data_contracts, candidate_migration, offline_validation, synthetic_metric_smoke_tests]
+  model_training: user_runs_later
+  deployment: user_runs_later
+  live_teacher_calls: false
+  external_patient_upload: false
+taxonomy:
+  labels: [triage, preconsult, info, other]
+  manuscript_aliases: {GUIDANCE: triage, PRECONSULT: preconsult, SERVICE: info, OTHER: other}
+  actions: [ROUTE, CLARIFY, ESCALATE]
+  unresolved_primary: null
+  other_handler: scope_refusal
+  safety_is_independent: true
+data_plan:
+  track: research_plan_v1_replaces_no_existing_data
+  engineering_target_reference: {train: 20000, dev: 2000, test: 3000}
+  research_gold_total: 6000
+  partitions:
+    train_gold: 2000
+    dev_tune: 300
+    dev_calibration: 150
+    dev_policy: 150
+    test_iid: 1200
+    test_hard: 800
+    test_external: 800
+    test_temporal: 400
+    test_safety: 200
+  train_unlabeled_target: 18000
+  audited_pseudo_target: 12000
+  synthetic_target: 10000
+  conditional_student_train_total: 24000
+  counts_are_targets_not_observations: true
+  safety_test_design: {clinician_positive_target: 100, clinician_near_negative_target: 100}
+  teacher_reliability_nested_gold_subset: 200
+  unresolved_items_count_in_action_evaluation_not_four_class_denominator: true
+split_policy:
+  isolate_groups: [patient_group_id, session_group_id, family_id, generator_seed_group_id, semantic_cluster_id]
+  external_site_ids: []
+  temporal_cutoff_utc: null
+  site_and_time_must_be_real_observations: true
+  iid_same_sites_disjoint_patients_and_sessions: true
+  test_teacher_access: final_scoring_only_after_freeze_not_for_tuning
+  test_content_used_for_synthesis: false
+  generation_allowed_partitions: [train_unlabeled, train_synthetic]
+teacher_protocol:
+  models:
+    jev: {observed_version: jev-1.14.0, immutable_revision_confirmed: false, purpose: typed_classifier}
+    gpt: {model_id: null, credentials_available: false, purpose: independent_labeler_or_generator}
+    local: {observed_model: Qwen3-VL-8B-Instruct, desired_strong_teacher: Qwen3-32B, available_strong_teacher_confirmed: false}
+  do_not_count_same_model_twice_as_independent: true
+  generator_self_label_is_not_independent_teacher: true
+  soft_targets:
+    required_classes: [triage, preconsult, info, other]
+    sum_tolerance: 0.000001
+    missing_class_policy: reject_not_zero_fill
+    verbal_confidence: never_convert_to_distribution
+    teacher_confidence_is_not_max_probability: true
+    temperature_calibration_split: train_gold_nested_reliability
+    distillation_temperature: 1.0
+    token_level_logits_available: false
+  credit_budget:
+    last_observed_balance: 11844
+    balance_is_live: false
+    heldout_and_calibration_reserve: 3000
+    max_available_for_training_judgments_at_last_observation: 8844
+    count_all_teacher_votes_and_retries: true
+    spend_today_in_this_preparation: 0
+experiment_scope:
+  mandatory_baselines: [majority_rules, tfidf_logistic_regression, chinese_encoder, qwen3_8b_prompted, qwen3_8b_gold_only]
+  optional_baselines: [bge_linear, qwen3_1_7b, qwen3_4b, hybrid_fallback]
+  primary_student: Qwen3-8B-text
+  primary_variants: [gold_only, single_teacher_hard, heterogeneous_audited, random_acquisition, active_acquisition]
+  conditional_variants: [class_soft_kd, entropy_matched_label_smoothing_control, evidence_supervision, remove_context]
+  calibration_is_posthoc_not_an_extra_training_run: true
+  safety_policy: independently_clinician_approved_not_learned_from_unreviewed_pseudo_labels
+  true_token_opd: deferred_out_of_current_scope
+  train_seeds: [11, 23, 42, 67, 101]
+  human_budget_curve: [100, 250, 500, 1000, 2000]
+  acquisition_budget_curve: [250, 500, 1000, 2000]
+  default_main_budget: 2000
+  same_pool_same_gold_same_judgment_budget_same_train_updates: true
+  adjudication_budget_outside_common_gold_main_study: 0
+  unresolved_training_pseudo_labels: quarantine_until_separately_budgeted_human_review
+  student_margin_and_teacher_disagreement_are_not_opd: true
+metrics:
+  primary: [iid_macro_f1, hard_macro_f1]
+  primary_contrasts:
+    - heterogeneous_audited_vs_single_teacher_hard_iid
+    - heterogeneous_audited_vs_single_teacher_hard_hard
+    - active_vs_random_acquisition_iid
+    - active_vs_random_acquisition_hard
+  secondary: [action_accuracy, workflow_activation_accuracy, clarify_precision_recall, safety_sensitivity, over_escalation, ece, brier, nll, aurc, risk_at_coverage, invalid_output_rate, cost]
+  ece_bins: 10
+  coverage_targets: [0.8, 0.9, 0.95]
+  coverage_ties: whole_confidence_blocks_report_achieved_coverage
+  malformed_predictions: counted_as_classification_errors
+policy_threshold_fitting:
+  allowed_partition: dev_policy
+  thresholds: [0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95, 0.99]
+  margins: [0.0, 0.1, 0.2, 0.3]
+  candidate_research_costs: {wrong_route: 5, unnecessary_clarify: 1, missed_escalation: 50, unnecessary_escalation: 2}
+  clinical_utility_approval: not_obtained_not_a_deployment_policy
+statistics:
+  paired_seed_and_group_bootstrap_replicates: 10000
+  paired_cluster_permutation_replicates: 10000
+  seed: 20261118
+  confidence_level: 0.95
+  familywise_adjustment: Holm
+  report_per_seed_and_failure_runs: true
+required_human_decisions:
+  hospital_data_authorization: not_provided
+  external_site: not_selected
+  temporal_cutoff: not_selected
+  clinical_safety_policy: not_reviewed
+  personal_medication_and_general_medical_qa_scope: needs_joint_scope_decision
+  gold_annotation_and_adjudication: pending

@@ -1,0 +1,28 @@
+{
+  "handoff_date": "2026-11-24",
+  "incoming_project_lead": "Nayang",
+  "repository": "https://github.com/terrense/Jev-Distillation-SFT-Qwen",
+  "current_candidates": 156,
+  "human_gold_approved": 0,
+  "associated_jev_vectors": 153,
+  "api_reported_one_hot_vectors": 97,
+  "historical_jev_dataset_annotations": 155,
+  "historical_connectivity_probes": 1,
+  "historical_credits_used": 156,
+  "last_observed_balance": 11844,
+  "balance_observed_on": "2026-11-18",
+  "balance_live": false,
+  "key_health_retested_for_upload": false,
+  "training_runs_executed": 0,
+  "production_deployments": 0,
+  "root_offline_tests_passed": 8,
+  "research_offline_tests_passed": 35,
+  "credential_delivery": {
+    "storage": "GitHub Actions repository secret",
+    "name": "JEVSTATION_API_KEY",
+    "configured": true,
+    "plaintext_committed": false
+  },
+  "main_next_step": "Nayang and a second independent human label the action-aware packets and freeze the policy",
+  "snapshot_limit": "Original hgdoctor intent module only; no databases, patient logs, production environment credentials or weights"
+}

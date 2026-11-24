@@ -1,0 +1,9 @@
+{
+  "records": 156,
+  "accepted": 0,
+  "unresolved": 156,
+  "jointly_class_labeled": 0,
+  "class_agreement": null,
+  "class_cohen_kappa": null,
+  "agreement_is_not_a_medical_safety_validation": true
+}

@@ -1,0 +1,480 @@
+[
+  {
+    "key": "hinton2015distilling",
+    "url": "https://arxiv.org/abs/1503.02531",
+    "submitted_title": "Distilling the Knowledge in a Neural Network",
+    "submitted_author": "Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Distilling the Knowledge in a Neural Network",
+    "observed_authors": [
+      "Hinton, Geoffrey",
+      "Vinyals, Oriol",
+      "Dean, Jeff"
+    ],
+    "observed_date": "2015/03/09",
+    "observed_doi": null,
+    "html_sha256": "da513f31efbf2ede4cab485b939528384ba09887e5c3223dd52e5a93bb344031",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "hsieh2023distilling",
+    "url": "https://aclanthology.org/2023.findings-acl.507/",
+    "submitted_title": "Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes",
+    "submitted_author": "Hsieh, Cheng-Yu and Li, Chun-Liang and Yeh, Chih-Kuan and Nakhost, Hootan and Fujii, Yasuhisa and Ratner, Alexander and Krishna, Ranjay and Lee, Chen-Yu and Pfister, Tomas",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes",
+    "observed_authors": [
+      "Cheng-Yu Hsieh",
+      "Chun-Liang Li",
+      "Chih-Kuan Yeh",
+      "Hootan Nakhost",
+      "Yasuhisa Fujii",
+      "Alex Ratner",
+      "Ranjay Krishna",
+      "Chen-Yu Lee",
+      "Tomas Pfister"
+    ],
+    "observed_date": "2023/7",
+    "observed_doi": "10.18653/v1/2023.findings-acl.507",
+    "html_sha256": "9133b9012863cb6a3f95e95256533cbe6d3265d8b00e01b774b4cd0f0d449f5f",
+    "differences": [
+      "author_names"
+    ],
+    "status": "metadata_mismatch"
+  },
+  {
+    "key": "nandi2026scaling",
+    "url": "https://aclanthology.org/2026.eacl-industry.14/",
+    "submitted_title": "Scaling Intent Understanding: A Framework for Classification with Clarification using Lightweight LLMs",
+    "submitted_author": "Nandi, Subhadip and Agarwal, Tanishka and Singh, Anshika and Bhatt, Priyanka",
+    "submitted_doi": "10.18653/v1/2026.eacl-industry.14",
+    "http_status": 200,
+    "observed_title": "Scaling Intent Understanding: A Framework for Classification with Clarification using Lightweight LLMs",
+    "observed_authors": [
+      "Subhadip Nandi",
+      "Tanishka Agarwal",
+      "Anshika Singh",
+      "Priyanka Bhatt"
+    ],
+    "observed_date": "2026/3",
+    "observed_doi": "10.18653/v1/2026.eacl-industry.14",
+    "html_sha256": "2c5bf97b9a9b4e52b64fef1dc7b041029960b52b6eb4cc4d7313b85705e168fb",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "castillo2026ddair",
+    "url": "https://aclanthology.org/2026.eacl-short.20/",
+    "submitted_title": "How DDAIR you? Disambiguated Data Augmentation for Intent Recognition",
+    "submitted_author": "Castillo-López, Galo and Lombard, Alexis and Semmar, Nasredine and de Chalendar, Gaël",
+    "submitted_doi": "10.18653/v1/2026.eacl-short.20",
+    "http_status": 200,
+    "observed_title": "How DDAIR you? Disambiguated Data Augmentation for Intent Recognition",
+    "observed_authors": [
+      "Galo Castillo-López",
+      "Alexis Lombard",
+      "Nasredine Semmar",
+      "Gaël de Chalendar"
+    ],
+    "observed_date": "2026/3",
+    "observed_doi": "10.18653/v1/2026.eacl-short.20",
+    "html_sha256": "7b86fec99f375ea48581193f850acbd345418949cd4dde41879310d6966da3cd",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "xie2026multiturn",
+    "url": "https://aclanthology.org/2026.customnlp4u-1.8/",
+    "submitted_title": "Building Multi-turn Intent Classification with LLM-based Labeling",
+    "submitted_author": "Xie, Biancen and Bian, Kaiqi and Gusain, Jai Ranjan Singh and Ramanathan, Manikandarajan and Maragoud, Raj",
+    "submitted_doi": "10.18653/v1/2026.customnlp4u-1.8",
+    "http_status": 200,
+    "observed_title": "Building Multi-turn Intent Classification with LLM-based Labeling",
+    "observed_authors": [
+      "Biancen Xie",
+      "Kaiqi Bian",
+      "Jai Ranjan Singh Gusain",
+      "Manikandarajan Ramanathan",
+      "Raj Maragoud"
+    ],
+    "observed_date": "2026/7",
+    "observed_doi": "10.18653/v1/2026.customnlp4u-1.8",
+    "html_sha256": "74d2fd04c03bf9e21f1361938f6baa3f6dc5177f59f6a03d1ade6b0c7a8975bc",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "wulamu2026multiintent",
+    "url": "https://aclanthology.org/2026.emnlp-main.689/",
+    "submitted_title": "Bridging Generation and Parsing: Collaborative Self-Distillation for Zero-shot Multi-Intent Spoken Language Understanding",
+    "submitted_author": "Wulamu, Aziguli and He, Ao and Zhang, Dezheng and Li, Jun and Qian, Xinyuan and Zhu, Zhihong and Qin, Libo and Xing, Bowen",
+    "submitted_doi": "10.18653/2026.emnlp-main.689",
+    "http_status": 200,
+    "observed_title": "Bridging Generation and Parsing: Collaborative Self-Distillation for Zero-shot Multi-Intent Spoken Language Understanding",
+    "observed_authors": [
+      "Aziguli Wulamu",
+      "Ao He",
+      "Dezheng Zhang",
+      "Jun Li",
+      "Xinyuan Qian",
+      "Zhihong Zhu",
+      "Libo Qin",
+      "Bowen Xing"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.emnlp-main.689",
+    "html_sha256": "39d50213fd0494a79cd66115a9f82161aeece98dbabf7222f01a1ff7f3a8ace4",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "sun2026cost",
+    "url": "https://aclanthology.org/2026.emnlp-industry.257/",
+    "submitted_title": "Cost-Efficient Intent Classification via Semantic-Candidate Adaptation and Selective Capability Routing",
+    "submitted_author": "Sun, Jiawei and Sang, Yongsheng",
+    "submitted_doi": "10.18653/2026.emnlp-industry.257",
+    "http_status": 200,
+    "observed_title": "Cost-Efficient Intent Classification via Semantic-Candidate Adaptation and Selective Capability Routing",
+    "observed_authors": [
+      "Jiawei Sun",
+      "Yongsheng Sang"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.emnlp-industry.257",
+    "html_sha256": "012960f0c114fa213c5a957f82d46041d01d6a724149ba52e9cf4b1a9b23fb29",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "bayer2026activellm",
+    "url": "https://aclanthology.org/2026.tacl-1.1/",
+    "submitted_title": "ActiveLLM: Large Language Model-Based Active Learning for Textual Few-Shot Scenarios",
+    "submitted_author": "Bayer, Markus and Lutz, Justin and Reuter, Christian",
+    "submitted_doi": "10.1162/tacl.a.63",
+    "http_status": 200,
+    "observed_title": "ActiveLLM: Large Language Model-Based Active Learning for Textual Few-Shot Scenarios",
+    "observed_authors": [
+      "Markus Bayer",
+      "Justin Lutz",
+      "Christian Reuter"
+    ],
+    "observed_date": "2026",
+    "observed_doi": "10.1162/tacl.a.63",
+    "html_sha256": "722d7dc0f4ff3222151c27cf83ee597e06d49ba0b545908b368a34d785f27e7d",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "pecher2026better",
+    "url": "https://arxiv.org/abs/2601.16278",
+    "submitted_title": "Better as Generators Than Classifiers: Leveraging LLMs and Synthetic Data for Low-Resource Multilingual Classification",
+    "submitted_author": "Pecher, Branislav and Cegin, Jan and Belanec, Robert and Srba, Ivan and Simko, Jakub and Bielikova, Maria",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Better as Generators Than Classifiers: Leveraging LLMs and Synthetic Data for Low-Resource Multilingual Classification",
+    "observed_authors": [
+      "Pecher, Branislav",
+      "Cegin, Jan",
+      "Belanec, Robert",
+      "Srba, Ivan",
+      "Simko, Jakub",
+      "Bielikova, Maria"
+    ],
+    "observed_date": "2026/01/22",
+    "observed_doi": null,
+    "html_sha256": "c75869f63c84daa61a6e4b069f1ef82a127128f6f606fcfd791244c62d9bfa6f",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "deusser2026jev",
+    "url": "https://arxiv.org/abs/2609.37647",
+    "submitted_title": "Evaluating and Benchmarking the System One Model Jev",
+    "submitted_author": "Deußer, Tobias and Sparrenberg, Lorenz and Sifa, Rafet",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Evaluating and Benchmarking the System One Model Jev",
+    "observed_authors": [
+      "Deußer, Tobias",
+      "Ramamurthy, Rajkumar",
+      "Sparrenberg, Lorenz",
+      "Sifa, Rafet"
+    ],
+    "observed_date": "2026/09/29",
+    "observed_doi": null,
+    "html_sha256": "bb44e727c3f02bc03929bece97c33ac022b46c2d2cb1e51534d85c861d9eced6",
+    "differences": [
+      "author_count"
+    ],
+    "status": "metadata_mismatch"
+  },
+  {
+    "key": "sadoun2026jev",
+    "url": "https://arxiv.org/abs/2610.09188",
+    "submitted_title": "From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev",
+    "submitted_author": "Sadoun, Mohamad Yazan and Sharif, Sarah and Banad, Yaser Mike",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev",
+    "observed_authors": [
+      "Sadoun, Mohamad Yazan",
+      "Sharif, Sarah",
+      "Banad, Yaser Mike"
+    ],
+    "observed_date": "2026/10/06",
+    "observed_doi": null,
+    "html_sha256": "4ff0e00bbcdfff5488789955bd8fd43b7919549acead3e37942615fe6752e0aa",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "wu2026taskrouting",
+    "url": "https://arxiv.org/abs/2610.02516",
+    "submitted_title": "Student-Guided Teacher Distillation for Efficient LLM Task Routing: Positioning Against Jev-Style System-1 Classifiers",
+    "submitted_author": "Wu, Haifeng and Manoharan, Srinivasan and Wan, Jian and Tu, Fangbo and Zhao, Junhua and Chen, Xin",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Student-Guided Teacher Distillation for Efficient LLM Task Routing: Positioning Against Jev-Style System-1 Classifiers",
+    "observed_authors": [
+      "Wu, Haifeng",
+      "Manoharan, Srinivasan",
+      "Wan, Jian",
+      "Tu, Fangbo",
+      "Zhao, Junhua",
+      "Chen, Xin"
+    ],
+    "observed_date": "2026/10/01",
+    "observed_doi": null,
+    "html_sha256": "a034b9c90af3370a4b600a3e16b3bfb90e247131be1684720fdc7355f845d20e",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "sumit2026noise",
+    "url": "https://aclanthology.org/2026.findings-emnlp.2063/",
+    "submitted_title": "Below the Noise Floor: Bimodal Seed Collapse and Distinct Failure Modes in Small-Model Knowledge Distillation",
+    "submitted_author": "Sumit, Dipto and Haque, Sakib Ul and Sadeque, Farig",
+    "submitted_doi": "10.18653/2026.findings-emnlp.2063",
+    "http_status": 200,
+    "observed_title": "Below the Noise Floor: Bimodal Seed Collapse and Distinct Failure Modes in Small-Model Knowledge Distillation",
+    "observed_authors": [
+      "Dipto Sumit",
+      "Sakib Ul Haque",
+      "Farig Sadeque"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.findings-emnlp.2063",
+    "html_sha256": "f3eec8f6d040dbdf44a1f7bdf2ef7ea259b0f2865921fa493291fe8c9e06ac14",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "weng2026negation",
+    "url": "https://medinform.jmir.org/2026/1/e103912/",
+    "submitted_title": "Reducing Annotation Costs Using Knowledge Distillation for Label-Efficient Negation Detection in Radiology Reports: Multisite Internal Validation Study",
+    "submitted_author": "Weng, Kung-Hsun and Huang, Bo-Lin and Kuo, Yu-Ting and Chou, Yi-Chen and Hsieh, Tsyh-Jyi and Liu, Chung-Feng",
+    "submitted_doi": null,
+    "http_status": 202,
+    "status": "metadata_verified_via_official_page",
+    "observed_title": "Reducing Annotation Costs Using Knowledge Distillation for Label-Efficient Negation Detection in Radiology Reports: Multisite Internal Validation Study",
+    "observed_authors": [
+      "Kung-Hsun Weng",
+      "Bo-Lin Huang",
+      "Yu-Ting Kuo",
+      "Yi-Chen Chou",
+      "Tsyh-Jyi Hsieh",
+      "Chung-Feng Liu"
+    ],
+    "observed_date": "2026/10/22",
+    "observed_doi": "10.2196/103912",
+    "differences": [],
+    "verification_method": "Official JMIR page read with web tool after automated requests returned HTTP 202",
+    "verified_on": "2026-11-18"
+  },
+  {
+    "key": "zhang2026pcp",
+    "url": "https://aclanthology.org/2026.luhme-1.1/",
+    "submitted_title": "PCP: A Controlled Benchmark for Pragmatic Intention Recognition in Clinical Communication",
+    "submitted_author": "Zhang, Kun",
+    "submitted_doi": "10.18653/2026.luhme-1.1",
+    "http_status": 200,
+    "observed_title": "PCP: A Controlled Benchmark for Pragmatic Intention Recognition in Clinical Communication",
+    "observed_authors": [
+      "Kun Zhang"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.luhme-1.1",
+    "html_sha256": "7bd94cb9239e2b25ec5798f27702eabd6809440e5d3b02e091f471f034714c6f",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "zhangliu2026cpd",
+    "url": "https://aclanthology.org/2026.findings-acl.335/",
+    "submitted_title": "Calibrated Progressive Distillation: Co-Designing Curriculum and Target Mixing for Knowledge Distillation of Large Language Models",
+    "submitted_author": "Zhang, Mengxiang and Liu, Lingyuan",
+    "submitted_doi": "10.18653/v1/2026.findings-acl.335",
+    "http_status": 200,
+    "observed_title": "Calibrated Progressive Distillation: Co-Designing Curriculum and Target Mixing for Knowledge Distillation of Large Language Models",
+    "observed_authors": [
+      "Mengxiang Zhang",
+      "Lingyuan Liu"
+    ],
+    "observed_date": "2026/7",
+    "observed_doi": "10.18653/v1/2026.findings-acl.335",
+    "html_sha256": "c0938eefc55adecd49f8d0a237b81a36e6e9ea230ffcf426abdbf64c8c2f4055",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "jin2026entropy",
+    "url": "https://proceedings.mlr.press/v306/jin26e.html",
+    "submitted_title": "Entropy-Aware On-Policy Distillation of Language Models",
+    "submitted_author": "Jin, Woogyeol and Min, Taywon and Yang, Yongjin and Wei, Dennis and Zhou, Yi and Kadhe, Swanand Ravindra and Baracaldo, Nathalie and Lee, Kimin",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Entropy-Aware On-Policy Distillation of Language Models",
+    "observed_authors": [
+      "Woogyeol Jin",
+      "Taywon Min",
+      "Yongjin Yang",
+      "Dennis Wei",
+      "Yi Zhou",
+      "Swanand Ravindra Kadhe",
+      "Nathalie Baracaldo",
+      "Kimin Lee"
+    ],
+    "observed_date": "2026/09/29",
+    "observed_doi": null,
+    "html_sha256": "4157a565fa51bca22bbc17e51b9352a510e0a05f72d31f44e2b9dfaedf221f04",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "lyu2026score",
+    "url": "https://proceedings.mlr.press/v306/lyu26j.html",
+    "submitted_title": "Student-Centered Distillation Narrows the Agentic Gap Between Small and Large LLMs",
+    "submitted_author": "Lyu, Yuanjie and Wang, Chengyu and Huang, Jun and Xu, Tong",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Student-Centered Distillation Narrows the Agentic Gap Between Small and Large LLMs",
+    "observed_authors": [
+      "Yuanjie Lyu",
+      "Chengyu Wang",
+      "Jun Huang",
+      "Tong Xu"
+    ],
+    "observed_date": "2026/09/29",
+    "observed_doi": null,
+    "html_sha256": "673627ce3cc8cb1e1e30310cd2fcd97fc44e21fe5f9f9070d91a57d89f986bed",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "li2026guidedopd",
+    "url": "https://aclanthology.org/2026.emnlp-main.1424/",
+    "submitted_title": "On-Policy Distillation with Curriculum Turn-level Guidance for Multi-turn Agents",
+    "submitted_author": "Li, Gengsheng and Zheng, Mao and Song, Mingyang and Liu, Ruiqi and Yang, Tianyu and Sun, Jie and Zhong, Qiyong and Zhang, Dan and Guo, Haiyun and Fang, Junfeng and Wang, Jinqiao",
+    "submitted_doi": "10.18653/2026.emnlp-main.1424",
+    "http_status": 200,
+    "observed_title": "On-Policy Distillation with Curriculum Turn-level Guidance for Multi-turn Agents",
+    "observed_authors": [
+      "Gengsheng Li",
+      "Mao Zheng",
+      "Mingyang Song",
+      "Ruiqi Liu",
+      "Tianyu Yang",
+      "Jie Sun",
+      "Qiyong Zhong",
+      "Dan Zhang",
+      "Haiyun Guo",
+      "Junfeng Fang",
+      "Jinqiao Wang"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.emnlp-main.1424",
+    "html_sha256": "2cc20c15cdbe0a1df2daeba41fe71fce2be276132be7886e0b36db16077a00d3",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "kim2026csd",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/1bfc9f74afa91b9b8add5a97a97001a1-Abstract-Conference.html",
+    "submitted_title": "Distillation of Large Language Models via Concrete Score Matching",
+    "submitted_author": "Kim, Yeongmin and Shin, Donghyeok and Kang, Mina and Na, Byeonghu and Moon, Il-chul",
+    "submitted_doi": null,
+    "http_status": 200,
+    "observed_title": "Distillation of Large Language Models via Concrete Score Matching",
+    "observed_authors": [
+      "Kim, Yeongmin",
+      "Shin, Donghyeok",
+      "Kang, Mina",
+      "Na, Byeonghu",
+      "Moon, Il-chul"
+    ],
+    "observed_date": "2026-04-20",
+    "observed_doi": null,
+    "html_sha256": "9e9269c530ac1be5f378dc9172dfa178805d6ed79cc3338d4fb170050e887e71",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "gorski2026admed",
+    "url": "https://www.nature.com/articles/s41598-026-54167-y",
+    "submitted_title": "ADMEDTAGGER: an annotation framework for distillation of expert knowledge for the Polish medical language",
+    "submitted_author": "Górski, Franciszek and Czyżewski, Andrzej",
+    "submitted_doi": "10.1038/s41598-026-54167-y",
+    "http_status": 200,
+    "observed_title": "ADMEDTAGGER: an annotation framework for distillation of expert knowledge for the Polish medical language",
+    "observed_authors": [
+      "Górski, Franciszek",
+      "Czyżewski, Andrzej"
+    ],
+    "observed_date": null,
+    "observed_doi": "10.1038/s41598-026-54167-y",
+    "html_sha256": "3fa02a857459714e54b560f2eca7bbb430044acd5542973ee69fc37d84ebf8c4",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "shen2026preference",
+    "url": "https://aclanthology.org/2026.emnlp-main.163/",
+    "submitted_title": "Preference-Aligned Data Synthesis for Fine-Grained Intent Detection",
+    "submitted_author": "Shen, Sitong and Zhang, Xiaotong",
+    "submitted_doi": "10.18653/2026.emnlp-main.163",
+    "http_status": 200,
+    "observed_title": "Preference-Aligned Data Synthesis for Fine-Grained Intent Detection",
+    "observed_authors": [
+      "Sitong Shen",
+      "Xiaotong Zhang"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.emnlp-main.163",
+    "html_sha256": "30994dcac3a42ba522aa0f8bed799c057263bda310d356df6fcd6e4ba38387fa",
+    "differences": [],
+    "status": "metadata_verified"
+  },
+  {
+    "key": "castillo2026turntaking",
+    "url": "https://aclanthology.org/2026.emnlp-industry.160/",
+    "submitted_title": "Leveraging Turn-taking Dynamics for Intent Recognition in Multi-party Conversations",
+    "submitted_author": "Castillo-López, Galo and Lombard, Alexis and de Chalendar, Gaël and Semmar, Nasredine",
+    "submitted_doi": "10.18653/2026.emnlp-industry.160",
+    "http_status": 200,
+    "observed_title": "Leveraging Turn-taking Dynamics for Intent Recognition in Multi-party Conversations",
+    "observed_authors": [
+      "Galo Castillo-López",
+      "Alexis Lombard",
+      "Gaël de Chalendar",
+      "Nasredine Semmar"
+    ],
+    "observed_date": "2026/10",
+    "observed_doi": "10.18653/2026.emnlp-industry.160",
+    "html_sha256": "90af94e0687b868e0e229a9b6e50fa8ac67ea2cc12eb12f8552ac879da816bcd",
+    "differences": [],
+    "status": "metadata_verified"
+  }
+]

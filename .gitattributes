@@ -1,0 +1,7 @@
+# Preserve material fingerprints across Windows and Linux; do not normalize source snapshots.
+* -text
+*.docx binary
+*.zip binary
+*.jpg binary
+*.png binary
+*.tsd binary

@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+checkpoints/
+venv/
+.venv/
+data/private/
+*.pyc
+.pytest_cache/
+.cache/
+secrets/
+credentials/
+*.pem
+*.key
+.DS_Store
+reports/local_runs/

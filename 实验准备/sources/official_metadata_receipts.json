@@ -1,0 +1,13 @@
+{
+  "weng2026negation": {
+    "url": "https://medinform.jmir.org/2026/1/e103912/",
+    "status": "metadata_verified_via_official_page",
+    "observed_title": "Reducing Annotation Costs Using Knowledge Distillation for Label-Efficient Negation Detection in Radiology Reports: Multisite Internal Validation Study",
+    "observed_authors": ["Kung-Hsun Weng", "Bo-Lin Huang", "Yu-Ting Kuo", "Yi-Chen Chou", "Tsyh-Jyi Hsieh", "Chung-Feng Liu"],
+    "observed_date": "2026/10/22",
+    "observed_doi": "10.2196/103912",
+    "differences": [],
+    "verification_method": "Official JMIR page read with web tool after automated requests returned HTTP 202",
+    "verified_on": "2026-11-18"
+  }
+}

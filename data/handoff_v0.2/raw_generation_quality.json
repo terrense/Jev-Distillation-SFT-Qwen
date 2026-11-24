@@ -1,0 +1,217 @@
+[
+  {
+    "file": "first_diverse_001.jsonl",
+    "n": 20,
+    "schema_failures": [],
+    "repetitive_negation_count": 19,
+    "unjustified_task_context_ids": [
+      "first-diverse-001-b0000-000",
+      "first-diverse-001-b0000-001",
+      "first-diverse-001-b0000-002",
+      "first-diverse-001-b0000-003",
+      "first-diverse-001-b0000-004",
+      "first-diverse-001-b0000-005",
+      "first-diverse-001-b0000-006",
+      "first-diverse-001-b0000-007",
+      "first-diverse-001-b0000-008",
+      "first-diverse-001-b0000-009",
+      "first-diverse-001-b0000-010",
+      "first-diverse-001-b0000-011",
+      "first-diverse-001-b0000-012",
+      "first-diverse-001-b0000-013",
+      "first-diverse-001-b0000-014",
+      "first-diverse-001-b0000-015",
+      "first-diverse-001-b0000-016",
+      "first-diverse-001-b0000-017",
+      "first-diverse-001-b0000-018",
+      "first-diverse-001-b0000-019"
+    ],
+    "decision": "quarantine_all_not_accepted",
+    "jev_credits_spent_on_this_file": 0
+  },
+  {
+    "file": "first_diverse_002.jsonl",
+    "n": 20,
+    "schema_failures": [
+      {
+        "id": "first-diverse-002-b0000-000",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-000"
+      },
+      {
+        "id": "first-diverse-002-b0000-001",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-001"
+      },
+      {
+        "id": "first-diverse-002-b0000-002",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-002"
+      },
+      {
+        "id": "first-diverse-002-b0000-003",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-003"
+      },
+      {
+        "id": "first-diverse-002-b0000-004",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-004"
+      },
+      {
+        "id": "first-diverse-002-b0000-005",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-005"
+      },
+      {
+        "id": "first-diverse-002-b0000-006",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-006"
+      },
+      {
+        "id": "first-diverse-002-b0000-007",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-007"
+      },
+      {
+        "id": "first-diverse-002-b0000-008",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-008"
+      },
+      {
+        "id": "first-diverse-002-b0000-009",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-009"
+      },
+      {
+        "id": "first-diverse-002-b0000-010",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-010"
+      },
+      {
+        "id": "first-diverse-002-b0000-011",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-011"
+      },
+      {
+        "id": "first-diverse-002-b0000-012",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-012"
+      },
+      {
+        "id": "first-diverse-002-b0000-013",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-013"
+      },
+      {
+        "id": "first-diverse-002-b0000-014",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-014"
+      },
+      {
+        "id": "first-diverse-002-b0000-015",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-015"
+      },
+      {
+        "id": "first-diverse-002-b0000-016",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-016"
+      },
+      {
+        "id": "first-diverse-002-b0000-017",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-017"
+      },
+      {
+        "id": "first-diverse-002-b0000-018",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-018"
+      },
+      {
+        "id": "first-diverse-002-b0000-019",
+        "reason": "history must contain role/content objects: first-diverse-002-b0000-019"
+      }
+    ],
+    "repetitive_negation_count": 0,
+    "unjustified_task_context_ids": [],
+    "decision": "quarantine_all_not_accepted",
+    "jev_credits_spent_on_this_file": 0
+  },
+  {
+    "file": "first_diverse_003.jsonl",
+    "n": 20,
+    "schema_failures": [
+      {
+        "id": "first-diverse-003-b0000-001",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-001"
+      },
+      {
+        "id": "first-diverse-003-b0000-002",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-002"
+      },
+      {
+        "id": "first-diverse-003-b0000-003",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-003"
+      },
+      {
+        "id": "first-diverse-003-b0000-004",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-004"
+      },
+      {
+        "id": "first-diverse-003-b0000-005",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-005"
+      },
+      {
+        "id": "first-diverse-003-b0000-006",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-006"
+      },
+      {
+        "id": "first-diverse-003-b0000-007",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-007"
+      },
+      {
+        "id": "first-diverse-003-b0000-008",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-008"
+      },
+      {
+        "id": "first-diverse-003-b0000-009",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-009"
+      },
+      {
+        "id": "first-diverse-003-b0000-010",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-010"
+      },
+      {
+        "id": "first-diverse-003-b0000-011",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-011"
+      },
+      {
+        "id": "first-diverse-003-b0000-012",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-012"
+      },
+      {
+        "id": "first-diverse-003-b0000-013",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-013"
+      },
+      {
+        "id": "first-diverse-003-b0000-014",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-014"
+      },
+      {
+        "id": "first-diverse-003-b0000-015",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-015"
+      },
+      {
+        "id": "first-diverse-003-b0000-016",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-016"
+      },
+      {
+        "id": "first-diverse-003-b0000-017",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-017"
+      },
+      {
+        "id": "first-diverse-003-b0000-018",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-018"
+      },
+      {
+        "id": "first-diverse-003-b0000-019",
+        "reason": "history must contain role/content objects: first-diverse-003-b0000-019"
+      }
+    ],
+    "repetitive_negation_count": 0,
+    "unjustified_task_context_ids": [],
+    "decision": "quarantine_all_not_accepted",
+    "jev_credits_spent_on_this_file": 0
+  },
+  {
+    "file": "first_diverse_004.jsonl",
+    "n": 0,
+    "schema_failures": [],
+    "repetitive_negation_count": 0,
+    "unjustified_task_context_ids": [],
+    "decision": "quarantine_all_not_accepted",
+    "jev_credits_spent_on_this_file": 0
+  }
+]

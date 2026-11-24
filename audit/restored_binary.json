@@ -1,0 +1,8 @@
+{
+  "path": "实验准备/sources/package/CARE_Distill_Research_Manuscript.docx",
+  "sha256": "b73aca1d7a626e2f0d9c8a30369798d8695defc1f49377e28e952edd9f7831a7",
+  "bytes": 58343,
+  "source": "archive/originals/CARE_Distill_Research_Package.zip member CARE_Distill_Research_Manuscript.docx",
+  "archive_sha256": "71920490db14c8c7fa7fb92beecd23432f9ba68194685eec3de43752375152f0",
+  "local_protection_note": "Host may transform Word files and ZIP members after writing. Git objects are staged from the owner-provided unprotected original without changing host security settings."
+}

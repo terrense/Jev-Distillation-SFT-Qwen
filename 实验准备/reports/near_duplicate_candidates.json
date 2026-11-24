@@ -1,0 +1,5 @@
+{
+  "threshold": 0.92,
+  "pairs": [],
+  "method": "context-aware lexical character TF-IDF; not an embedding semantic audit"
+}

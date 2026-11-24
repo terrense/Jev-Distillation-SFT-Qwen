@@ -1,0 +1,23 @@
+{
+  "schema_version": "care-distill-v0.1-proposal",
+  "description": "Proposed annotation/teacher response schema; requires clinical and institutional approval",
+  "primary_intent_enum": ["GUIDANCE", "PRECONSULT", "SERVICE", "OTHER"],
+  "action_enum": ["ROUTE", "CLARIFY", "ESCALATE"],
+  "required_fields": ["episode_id", "turn_id", "primary_intent", "secondary_intents", "needs_clarification", "risk_trigger", "policy_action", "evidence_span", "annotator_source"],
+  "example_synthetic_only": {
+    "episode_id": "synthetic-demo-001",
+    "turn_id": 3,
+    "utterance": "已经挂了内科，还能改成耳鼻喉科吗？",
+    "history": [],
+    "workflow_state": "appointment_management",
+    "primary_intent": "SERVICE",
+    "secondary_intents": ["GUIDANCE"],
+    "needs_clarification": false,
+    "risk_trigger": false,
+    "policy_action": "ROUTE",
+    "evidence_span": "还能改成耳鼻喉科吗",
+    "annotator_source": "synthetic_placeholder_not_gold",
+    "review_status": "unreviewed"
+  },
+  "quality_checks": ["session_disjoint_split", "no_test_teacher_access", "licensed_model_use", "medical_risk_human_review", "teacher_probability_semantics_verified"]
+}

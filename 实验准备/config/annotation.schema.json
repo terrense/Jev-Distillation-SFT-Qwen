@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:care-distill:record:1",
+  "title": "CARE Distill research record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "policy_version", "partition", "grouping", "source", "inputs", "annotation", "teacher_outputs", "provenance"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "policy_version": {"const": "care-prep-v1"},
+    "partition": {"enum": ["unassigned", "train_gold", "train_unlabeled", "train_pseudo", "train_synthetic", "dev_tune", "dev_calibration", "dev_policy", "test_iid", "test_hard", "test_external", "test_temporal", "test_safety"]},
+    "grouping": {
+      "type": "object", "additionalProperties": false, "required": ["family_id", "session_group_id", "patient_group_id", "site_id", "occurred_at", "generator_seed_group_id", "semantic_cluster_id"],
+      "properties": {
+        "family_id": {"type": "string", "minLength": 1},
+        "session_group_id": {"type": ["string", "null"]},
+        "patient_group_id": {"type": ["string", "null"]},
+        "site_id": {"type": ["string", "null"]},
+        "occurred_at": {"type": ["string", "null"], "format": "date-time"},
+        "generator_seed_group_id": {"type": ["string", "null"]},
+        "semantic_cluster_id": {"type": ["string", "null"]}
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false, "required": ["kind", "rights_status", "external_transfer_authorized"],
+      "properties": {
+        "kind": {"enum": ["assistant_synthetic", "llm_synthetic", "manual_roleplay", "hospital_real", "public_licensed"]},
+        "rights_status": {"enum": ["synthetic_no_patient_source", "approved", "not_provided"]},
+        "external_transfer_authorized": {"type": "boolean"}
+      }
+    },
+    "inputs": {
+      "type": "object", "additionalProperties": false, "required": ["user_input", "history", "context"],
+      "properties": {
+        "user_input": {"type": "string", "minLength": 1},
+        "history": {"type": "array", "maxItems": 4, "items": {"type": "object", "additionalProperties": false, "required": ["role", "content"], "properties": {"role": {"enum": ["user", "assistant"]}, "content": {"type": "string", "minLength": 1}}}},
+        "context": {"type": "object", "additionalProperties": false, "required": ["stage", "active_task"], "properties": {"stage": {"enum": ["unknown", "unregistered", "registered", "preconsulting", "after_visit"]}, "active_task": {"enum": ["triage", "preconsult", "info", "other", null]}}}
+      }
+    },
+    "annotation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["primary_intent", "secondary_intents", "acceptable_intents", "needs_clarification", "policy_action", "risk_trigger", "risk_review_status", "review_status", "annotators", "evidence"],
+      "properties": {
+        "primary_intent": {"enum": ["triage", "preconsult", "info", "other", null]},
+        "secondary_intents": {"type": "array", "uniqueItems": true, "items": {"enum": ["triage", "preconsult", "info", "other"]}},
+        "acceptable_intents": {"type": "array", "uniqueItems": true, "items": {"enum": ["triage", "preconsult", "info", "other"]}},
+        "needs_clarification": {"type": ["boolean", "null"]},
+        "policy_action": {"enum": ["ROUTE", "CLARIFY", "ESCALATE", null]},
+        "risk_trigger": {"type": ["boolean", "null"]},
+        "risk_review_status": {"enum": ["not_assessed", "ops_screened", "clinician_approved"]},
+        "review_status": {"enum": ["pending", "human_approved", "audited_pseudo"]},
+        "annotators": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "evidence": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["field", "start", "end", "text"], "properties": {"field": {"type": "string"}, "start": {"type": "integer", "minimum": 0}, "end": {"type": "integer", "minimum": 0}, "text": {"type": "string", "minLength": 1}}}}
+      }
+    },
+    "teacher_outputs": {"type": "array", "items": {"type": "object", "required": ["teacher_id", "model_version", "teacher_policy_version", "prediction", "probabilities", "probability_semantics", "calibration_status", "eligible_for_soft_kd", "input_hash"], "properties": {
+      "teacher_id": {"type": "string"}, "model_version": {"type": ["string", "null"]}, "teacher_policy_version": {"type": "string"},
+      "prediction": {"enum": ["triage", "preconsult", "info", "other", null]}, "probabilities": {"type": ["object", "null"]},
+      "probability_semantics": {"enum": ["class_vector_structure_verified", "hard_label_only", "invalid_not_for_training"]},
+      "calibration_status": {"enum": ["not_calibrated", "calibrated_on_training_gold"]}, "eligible_for_soft_kd": {"type": "boolean"}, "input_hash": {"type": "string"}
+    }}},
+    "provenance": {"type": "object"}
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "n": 119,
+  "provisional": true,
+  "accuracy": 0.9915966386554622,
+  "macro_f1": 0.9915254237288136,
+  "format_success_rate": 1.0,
+  "per_label": {
+    "triage": {
+      "support": 30,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "preconsult": {
+      "support": 30,
+      "precision": 1.0,
+      "recall": 0.9666666666666667,
+      "f1": 0.983050847457627
+    },
+    "info": {
+      "support": 30,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "other": {
+      "support": 29,
+      "precision": 0.9666666666666667,
+      "recall": 1.0,
+      "f1": 0.983050847457627
+    }
+  },
+  "confusion": {
+    "triage": {
+      "triage": 30,
+      "preconsult": 0,
+      "info": 0,
+      "other": 0,
+      "ERROR": 0
+    },
+    "preconsult": {
+      "triage": 0,
+      "preconsult": 29,
+      "info": 0,
+      "other": 1,
+      "ERROR": 0
+    },
+    "info": {
+      "triage": 0,
+      "preconsult": 0,
+      "info": 30,
+      "other": 0,
+      "ERROR": 0
+    },
+    "other": {
+      "triage": 0,
+      "preconsult": 0,
+      "info": 0,
+      "other": 29,
+      "ERROR": 0
+    }
+  },
+  "false_rejection_rate": 0.011111111111111112,
+  "out_of_scope_acceptance_rate": 0.0,
+  "latency_p50_ms": 3429.49,
+  "latency_p95_ms": 4445.69,
+  "coverage": {
+    "single_turn": {
+      "correct": 95,
+      "n": 96,
+      "accuracy": 0.9895833333333334
+    },
+    "context": {
+      "correct": 23,
+      "n": 23,
+      "accuracy": 1.0
+    },
+    "boundary": {
+      "correct": 23,
+      "n": 23,
+      "accuracy": 1.0
+    }
+  },
+  "failures": [
+    {
+      "id": "seed-preconsult-015",
+      "expected": "preconsult",
+      "actual": "other",
+      "user_input": "我想给门诊医生准备一个简短的病情说明",
+      "error": null,
+      "raw_output": null,
+      "raw_intent": null
+    }
+  ],
+  "warning": "Assistant-authored smoke labels are not an independent human benchmark."
+}
